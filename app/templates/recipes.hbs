@@ -1,0 +1,11 @@
+<div class="recipes template">
+  <p>This is <em>recipes .hbs</em>.</p>
+
+  <h3>Recipes</h3>
+
+  <ul class="recipes ">
+    {{#each model as |recipe|}}
+    <li>{{recipe.name}} ({{recipe.description}})</li>
+    {{/each}}
+  </ul>
+</div>
