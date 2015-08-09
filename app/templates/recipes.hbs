@@ -1,4 +1,11 @@
-<div class="albums template">
-  <p>This is <em>types.hbs</em>.</p>
-  {{#link-to 'types.index' class="button"}}&larr; Back{{/link-to}}
+<div class="recipes template">
+  <h3>Recipes</h3>
+
+  <ul class="recipes">
+    {{#each model as |recipe|}}
+    <li>{{#link-to 'recipe' recipe}}{{recipe.name}} {{/link-to}}</li>
+    {{/each}}
+  </ul>
+
+  {{outlet}}
 </div>
