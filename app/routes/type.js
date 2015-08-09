@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model: function (params) {
-    // return this.store.find('type', params.type_id);
-    return this.modelFor('type').get('recipes');
+    return this.store.find('type', params.type_id);
+    // return this.modelFor('type').get('recipes');
   }
 });

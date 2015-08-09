@@ -1,7 +1,11 @@
-<ul class="types">
-  {{#each model as |type|}}
-  <li>{{#link-to 'type' type}}{{type.name}}{{/link-to}}</li>
-  {{/each}}
-</ul>
+<div class="types template">
+  <p>This is <em>types.hbs</em>.</p>
+
+  <ul class="types">
+    {{#each model as |type|}}
+    <li>{{#link-to 'type' type}}{{type.name}}{{/link-to}}</li>
+    {{/each}}
+  </ul>
 
   {{outlet}}
+</div>

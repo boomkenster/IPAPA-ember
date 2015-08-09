@@ -3,7 +3,7 @@ import DS from 'ember-data';
 let Type = DS.Model.extend({
   name: DS.attr('string'),
   image: DS.attr('string'),
-  recipes: DS.hasMany('recipe', { async: true })
+  recipes: DS.hasMany('recipes', { async: true })
 });
 
 Type.reopenClass({
@@ -12,7 +12,7 @@ Type.reopenClass({
       "id": 1,
       "name": "IPA",
       "image": "http://www.scientificamerican.com/sciam/cache/file/BCEF876F-3D0B-4AB4-85DA1CE566DA2DA8_article.jpg?8F1BC",
-      "recipes": [1]
+      "recipes": [1, 6, 7]
 
     },
     {
