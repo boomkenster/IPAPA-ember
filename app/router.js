@@ -8,9 +8,7 @@ var Router = Ember.Router.extend({
 export default Router.map(function() {
   this.resource('types', function() {
     this.resource('type', {path: ':type_id'}, function(){
-        this.resource('recipes', function () {
-          this.resource('recipe', {path: ':recipe_id'});
-        });
+        this.resource('recipes');
     });
   });
 });
