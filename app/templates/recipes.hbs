@@ -1,4 +1,11 @@
+<div class="recipes template">
+  <h3>Recipes</h3>
 
-<div class="artist-index template">
-  <p>This is <em>recipes/index.hbs</em>.</p>
+  <ul class="recipes">
+    {{#each model as |recipe|}}
+    <li>{{#link-to 'recipe' recipe}}{{recipe.name}} {{/link-to}}</li>
+    {{/each}}
+  </ul>
+
+  {{outlet}}
 </div>
