@@ -1,9 +1,12 @@
 <div class="types template">
-  
+
 
   <ul class="types">
     {{#each model as |type|}}
-    <li>{{#link-to 'type' type}}{{type.name}}{{/link-to}}</li>
+    <p>
+      {{#link-to 'type' type}}{{type.name}}{{/link-to}}
+    </p>
+
     {{/each}}
   </ul>
 
