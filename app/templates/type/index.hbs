@@ -1,9 +1,7 @@
-<div class="artist-index template">
-
+<div class="type-index template">
   <div class="biography">
-    <h3>Learn about the {{model.name}}</h3>
-    <p>{{model.name}} is a cool, delicious beer.</p>
+    <h3 class="center-align">Learn about the {{model.name}}</h3>
+    <p class="center-align">{{model.name}} is a cool, delicious beer.</p>
   </div>
-
-{{render 'recipes' model.recipes}}
+  {{render 'recipes' model.recipes}}
 </div>

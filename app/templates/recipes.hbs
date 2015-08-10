@@ -1,11 +1,13 @@
 <div class="recipes template">
-  <h3>Recipes</h3>
-
-  <ul class="recipes">
-    {{#each model as |recipe|}}
-    <li>{{#link-to 'recipe' recipe}}{{recipe.name}} {{/link-to}}</li>
-    {{/each}}
-  </ul>
-
+  <h3 class="center-align">Recipes</h3>
+  <div class="row">
+    <div class="col m3 offset-m5">
+    <ul class="recipes">
+      {{#each model as |recipe|}}
+      <li>{{#link-to 'recipe' recipe}}{{recipe.name}} {{/link-to}}</li>
+      {{/each}}
+    </ul>
+    </div>
+  </div>
   {{outlet}}
 </div>
