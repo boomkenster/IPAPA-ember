@@ -1,4 +1,25 @@
+.type-style {
+  border: 3px solid #5d4037;
+  background-color: #795548;
+}
 
+.type-style a{
+  color: white;
+}
+
+body {
+  background: #bcaaa4 url('/assets/images/wood_grain.jpg') center;
+  background-size: 100%;
+ /* background-image: url('/assets/images/beer_tasting.jpg');*/
+}
+
+.container {
+  background-color: rgba(239, 235, 233, 0.9);
+  padding: 20px;
+}
+
+
+/*
 * {
   box-sizing: border-box;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -46,4 +67,4 @@ a.active {
   padding: 1em;
   font-size: 0.8em;
   margin-bottom: 1em;
-}
+}*/

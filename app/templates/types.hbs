@@ -1,14 +1,12 @@
 <div class="types template">
-
-
-  <ul class="types">
+<div class="row">
     {{#each model as |type|}}
-    <p>
-      {{#link-to 'type' type}}{{type.name}}{{/link-to}}
-    </p>
-
+        <div class="col m3 type-style">
+          <h3 class="center-align">
+            {{#link-to 'type' type}}{{type.name}}{{/link-to}}
+          </h3>
+        </div>
     {{/each}}
-  </ul>
-
+</div>
   {{outlet}}
 </div>
